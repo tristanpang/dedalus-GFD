@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spectralGFD"
+version = "0.0.1"
+authors = [
+  { name="Tristan Pang", email="tristan.pang@new.ox.ac.uk" },
+]
+description = "A spectral solver for GFDs using Dedadlus"
+readme = "README.md"
+requires-python = ">=3.7"
