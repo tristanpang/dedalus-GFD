@@ -10,7 +10,7 @@ from .laplaceCoriolis import *
 from .specialFunctions import *
 from .timeSolver import *
 from .rotationPDE import *
-
+from .stommelMunk import *
 
 import dedalus
 matplotlib.rcParams.update({'font.size': 16})

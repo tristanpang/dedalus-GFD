@@ -7,7 +7,7 @@ time_step = np.pi/400  # Time step
 stop_sim_time = 3*np.pi + time_step  # Simulation length
 Lr = 1
 timestepper = d3.SBDF3
-save_every = 200
+save_every = 10
 scales = 2
 
 
