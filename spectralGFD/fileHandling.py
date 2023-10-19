@@ -26,10 +26,8 @@ def animate_file(save_name, file_num=1, variable_name='q', frames=None, cmap=Non
         ax[2].axis('off')
         ani2 = matplotlib.animation.FuncAnimation(fig, plot_func,
                                                   frames=frames)
-        plt.close()
+        plt.show()
 
-        video = HTML(ani2.to_jshtml())
-        display(video)
 
 
 def time_plot_file(save_name, file_num=1, plot_t_list=[0, .5, 1],
