@@ -7,7 +7,7 @@ from spectralGFD import *
 
 def animate_file(save_name, file_num=1, variable_name='q', frames=None, cmap=None):
     '''Animate from folder called save_name'''
-    with h5py.File(f"{save_name}/{save_name}_s{file_num}.h5",
+    with h5py.File(f"saves/{save_name}/{save_name}_s{file_num}.h5",
                    mode='r') as file:
         # Load dataset
         q = file['tasks'][variable_name]
@@ -37,7 +37,7 @@ def time_plot_file(save_name, file_num=1, plot_t_list=[0, .5, 1],
     '''From folder save_name,
     Plots PDE over time. `plot_t_list` is list
     of normalised time in [0,1] to be plotted.'''
-    with h5py.File(f"{save_name}/{save_name}_s{file_num}.h5",
+    with h5py.File(f"saves/{save_name}/{save_name}_s{file_num}.h5",
                    mode='r') as file:
         # Load dataset
         q = file['tasks'][variable_name]
@@ -64,7 +64,7 @@ def time_plot_file(save_name, file_num=1, plot_t_list=[0, .5, 1],
 def load_snapshot(save_name, file_num=1, index=0,
                   variable_name='q'):
     '''From folder save_name.'''
-    with h5py.File(f"{save_name}/{save_name}_s{file_num}.h5",
+    with h5py.File(f"saves/{save_name}/{save_name}_s{file_num}.h5",
                    mode='r') as file:
         # Load dataset
         q = file['tasks'][variable_name]
