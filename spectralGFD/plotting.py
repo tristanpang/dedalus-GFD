@@ -72,6 +72,7 @@ def polar_plot(phi, r, z, *, ax=None, filename=None, title=None, cax=None, cmap=
 def animate(plot_func, t_list, pause=0):
     '''Make animation based on a plot function and time list'''
     for k, t in enumerate(t_list):
+        clear_output(wait=True)
         plot_func(k, t)
         plt.pause(pause)
         plt.show()
