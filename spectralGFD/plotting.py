@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.animation
 import warnings
-
+from IPython.display import clear_output
 
 def test():
     print('Hello world')
